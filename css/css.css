@@ -1,0 +1,55 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+html,body,div,ul,ol,li,dl,dt,dd,form,input,textarea,table,h1,h2,h3,h4,p,span,a,em,i,img{font-style: normal;}
+html,body {height: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: "Roboto", "Open Sans", "PingFang", "PingFang SC", "PingFang HK", "PingFang TC", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;}
+a img {border: 0;width: 100%;}
+a {text-decoration: none;color: inherit;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+ol,ul {list-style-type: none;}
+ul li, ol li {box-sizing: border-box;}
+h1,h2,h3 {font-weight: normal;}
+input {font: inherit;outline: none;border: 0;border-radius: 0;-webkit-tap-highlight-color: transparent;appearance: none;-webkit-appearance: none;background: transparent;line-height: normal;box-sizing: border-box;-webkit-writing-mode: horizontal-tb;}
+button {border: none;background: none;}
+textarea {font: inherit;border: 0;outline: 0;color: inherit;box-sizing: border-box;white-space: pre-wrap;word-wrap: break-word;-webkit-appearance: none;background-color: white;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-rtl-ordering: logical;user-select: text;flex-direction: column;}
+.clearfix:after {content: '';display: block;clear: both;visibility: hidden;}
+/************************************************************************/
+.flex{display: -webkit-box;}
+.flexv{display: -webkit-box; -webkit-box-orient: vertical;}
+.flexitem{display: -webkit-box; -webkit-box-flex: 1; -webkit-flex: 1; flex: 1;}
+.flexitemv{display: -webkit-box; -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; -webkit-box-orient: vertical;}
+.centerv{-webkit-box-align: center;}
+.centerh{-webkit-box-pack: center;}
+.center{-webkit-box-align: center; -webkit-box-pack: center;}
+.endh{-webkit-box-pack: end;}
+.endv{-webkit-box-align: end;}
+.end{-webkit-box-align: end; -webkit-box-pack: end;}
+/************************************************************************/
+.swiper-container {width: 100%;height: 100%;background: #f3f3f2;position: relative;}
+.swiper-slide {width: 100%;height: 100%;background: url("../image/bj.png") no-repeat left top;background-size: 100% 100%;}
+img {display: block;}
+.ani {position: absolute;}
+@-webkit-keyframes tipmove {0% { bottom: 10px; opacity: 0  }50% { bottom: 15px; opacity: 1 }100% {bottom: 20px;opacity: 0  }}
+@-webkit-keyframes rotating{ from{-webkit-transform:rotate(0deg);} to{-webkit-transform:rotate(360deg);} }
+#array {position: absolute;z-index: 999;-webkit-animation: tipmove 1.5s infinite ease-in-out;}
+.play_yinfu{width:50px;height:50px;position:absolute;top:70%;right:10px;z-index: 90}
+.play_yinfu.spin{background: url("../image/music.gif") no-repeat center center; background-size: 60px 60px;}
+.play_yinfu .rotate{width:30px;height:30px;position: absolute;top:10px;left:10px;background: url("../image/music.png") no-repeat;background-size: 100% 100%;}
+.play_yinfu.spin .rotate{-webkit-animation:rotating 1.2s linear infinite; animation:rotating 1.2s linear infinite;}
+.swiper-slide>div.ani{font-size:3.6vw;}
+/*********************slide1********************************/
+.slide1{background:url("../image/bj.png")no-repeat;background-size:cover;}
+.slide1 .resize_1box{width:72%;height:20%;top:0;left:-22%}
+.slide1 .resize_1{width:38%;top:0;left:31%;-webkit-animation:shuzhi 2s linear infinite;}
+.slide1 .resize_2box{width:22%;top:5%;right:3%;}
+.slide1 .resize_2-1{width:100%;-webkit-animation:fanzhuan1 3.2s linear infinite;}
+.slide1 .resize_2-2{width:100%;-webkit-animation:fanzhuan2 3.2s linear infinite;}
+.slide1 .resize_3{width:26%;top:8%;left:40%;}
+.slide1 .resize_4box{width:84%;height:35%;top:18%;left:8%;}
+.slide1 .resize_4_1{width:100%;top:11%;left:0%;}
+.slide1 .resize_4_2{width:10%;top:4%;left:40%;-webkit-animation:dagun 4s linear infinite;}
+.slide1 .resize_5{width:80%;top:52%;left:10%;}
+.slide1 .resize_6{width:100%;top:65%;left:0%;}
+.slide1 .resize_7box{width:90%;height:16%;top:78%;left:5%;}
+.slide1 .resize_7_1{width:100%}
+.slide1 .resize_7_2{width:56%;top:15%;left:22%;}
+.slide1 .resize_8box{width:100%;height:29%;bottom:0;left:0;}
+.slide1 .resize_8_1{width:100%;top:-2%;left:8%;-webkit-animation:diwen 2s .9s linear infinite;}
+.slide1 .resize_8_2{width:100%;-webkit-animation:diwen 2s .6s linear infinite;}
